@@ -10,10 +10,11 @@ def test_fib_recursive():
 def test_fib_top_down():
     n = 10
     fibs = [-1] * (n+1)
-    assert fib_top_down(n, fibs) == 55
+    assert fib_top_down(n, {}) == 55
     print(fibs)
 
 def test_fib_bottom_up():
     n = 10
     assert fib_bottom_up(n) == 55
+
 
